@@ -1,24 +1,24 @@
 <%-- 
     Document   : listerAthletes
-    Created on : 25 août 2026, 12:27:51
+    Created on : 14 août 2024, 12:27:51
     Author     : zakina
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="sio.la2028.model.Athlete"%>
-<%@page import="sio.la2028.model.Pays"%>
+<%@page import="sio.paris2024.model.Athlete"%>
+<%@page import="sio.paris2024.model.Pays"%>
 <%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>LOS ANGELES 2028</title>
+        <title>PARIS 2024</title>
         <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	crossorigin="anonymous">
-
-        <title>LOS ANGELES 2028</title>
+        
+        <title>Paris 2024</title>
 
         <style>
             body {

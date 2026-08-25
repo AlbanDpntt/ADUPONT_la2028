@@ -1,19 +1,19 @@
 <%-- 
-    Document   : ajouterAthlete
-    Created on : 25/08/2026, 13:30:47
+    Document   : ajouterPompier
+    Created on : 18 mars 2024, 13:30:47
     Author     : zakina
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="sio.la2028.model.Pays"%>
-<%@page import="sio.la2028.model.Athlete"%>
-<%@page import="sio.la2028.form.FormAthlete"%>
+<%@page import="sio.paris2024.model.Pays"%>
+<%@page import="sio.paris2024.model.Athlete"%>
+<%@page import="sio.paris2024.form.FormAthlete"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>LOS ANGELES 2028</title>
+        <title>paris 2024</title>
     </head>
     <body>
         <h1>NOUVEL ATHLETE</h1>
