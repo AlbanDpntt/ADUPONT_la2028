@@ -58,9 +58,7 @@ CREATE TABLE `pays` (
 
 INSERT INTO `pays` (`id`, `nom`) VALUES
 (1, 'France'),
-(2, 'Etats-Unis'),
-(3, 'France'),
-(4, 'Etats-Unis');
+(2, 'Etats-Unis');
 
 --
 -- Index pour les tables déchargées
