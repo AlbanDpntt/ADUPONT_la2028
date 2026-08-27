@@ -33,26 +33,27 @@ CREATE TABLE `athlete` (
   `id` int(11) NOT NULL,
   `nom` varchar(50) NOT NULL,
     `prenom` varchar(50) NOT NULL,
-  `pays_id` int(11) NOT NULL
+  `pays_id` int(11) NOT NULL,
+  `date_de_naissance` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `athlete`
 --
 
-INSERT INTO `athlete` (`id`, `prenom`, `nom`, `pays_id`) VALUES
-(1, 'Teddy', 'Riner', 93),
-(2, 'Simone', 'Biles', 88),
-(3, 'Sydney', 'McLaughlin-Levrone', 88),
-(4, 'Stephen', 'Curry', 88),
-(5, 'Caroline', 'Marks', 88),
-(6, 'Noah', 'Lyles', 88),
-(7, 'Mikaela', 'Shiffrin', 88),
-(8, 'Léon', 'Marchand', 93),
-(9, 'Victor', 'Wembanyama', 93),
-(10, 'Youssef', 'Krou', 93),
-(11, 'Anastasia', 'Bayandina', 93),
-(12, 'Joris', 'Daudet', 93);
+INSERT INTO `athlete` (`id`, `prenom`, `nom`, `date_de_naissance`, `pays_id`) VALUES
+(1, 'Teddy', 'Riner', '1989-04-07', 93),
+(2, 'Simone', 'Biles', '1997-03-14', 88),
+(3, 'Sydney', 'McLaughlin-Levrone', '1999-08-07', 88),
+(4, 'Stephen', 'Curry', '1988-03-14', 88),
+(5, 'Caroline', 'Marks', '2002-02-14', 88),
+(6, 'Noah', 'Lyles', '1997-07-18', 88),
+(7, 'Mikaela', 'Shiffrin', '1995-03-13', 88),
+(8, 'Léon', 'Marchand', '2002-05-17', 93),
+(9, 'Victor', 'Wembanyama', '2004-01-04', 93),
+(10, 'Youssef', 'Krou', '1989-08-16', 93),
+(11, 'Anastasia', 'Bayandina', '1996-11-01', 93),
+(12, 'Joris', 'Daudet', '1991-02-12', 93);
 
 
 

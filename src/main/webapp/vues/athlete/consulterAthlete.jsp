@@ -7,6 +7,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="sio.la2028.model.Athlete"%>
 <%@page import="sio.la2028.model.Pays"%>
+<%@page import="java.time.LocalDate"%>
+<%@page import="java.time.format.DateTimeFormatter"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,6 +26,7 @@
         %>
         <h1><%  out.println(a.getNom());%></h1>
         <p><%  out.println(a.getPrenom());%></p>
+        <p><%  out.println(a.getDob());%></p>
             
                          
             <table>

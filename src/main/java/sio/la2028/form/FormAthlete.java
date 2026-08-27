@@ -5,6 +5,8 @@
 package sio.la2028.form;
 
 import jakarta.servlet.http.HttpServletRequest;
+
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import sio.la2028.model.Athlete;
@@ -68,6 +70,7 @@ public class FormAthlete {
 
         String prenom = getDataForm(request, "prenom");
         String nom = getDataForm( request, "nom" );
+        String date_de_naissance = getDataForm( request, "date_de_naissance" );
         int idPays = Integer.parseInt((String)getDataForm( request, "idPays" ));
        
       
@@ -78,6 +81,7 @@ public class FormAthlete {
         }
         ath.setNom(nom);
         ath.setPrenom(prenom);
+        ath.setDob(String.valueOf(date_de_naissance));
 
         if ( erreurs.isEmpty() ) {
             resultat = "Succès de l'ajout.";

@@ -4,6 +4,8 @@
  */
 package sio.la2028.model;
 
+import java.util.Date;
+
 /**
  *
  * @author zakina
@@ -14,13 +16,15 @@ public class Athlete {
     private String prenom;
     private String nom ;
     private Pays pays ;
+    private String date_de_naissance;
     public Athlete() {
     }
 
-    public Athlete(int id, String nom, String prenom) {
+    public Athlete(int id, String nom, String prenom, String date_de_naissance) {
         this.id = id;
         this.prenom = prenom;
         this.nom = nom;
+        this.date_de_naissance = date_de_naissance;
     }
 
     public int getId() {
@@ -41,6 +45,18 @@ public class Athlete {
 
     public String getNom() {
         return nom;
+    }
+
+    public void setDob(String date_de_naissance) {
+        this.date_de_naissance = date_de_naissance;
+    }
+
+    public String getDob() {
+        if (this.date_de_naissance != null && !this.date_de_naissance.isEmpty()) {
+            java.time.LocalDate date = java.time.LocalDate.parse(this.date_de_naissance);
+            return date.format(java.time.format.DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        }
+        return "";
     }
 
     public void setNom(String nom) {

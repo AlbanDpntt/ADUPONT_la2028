@@ -42,8 +42,8 @@
                     %>
                 </select>
                 </br>
-                <label for="date-naissance">Date de naissance :</label>
-                <input type="date" id="date-naissance" name="date-naissance">
+                <label for="date_de_naissance">Date de naissance :</label>
+                <input type="date" id="date_de_naissance" name="date_de_naissance">
 
                                
             <input type="submit" name="valider" id="valider" value="Valider"/>
