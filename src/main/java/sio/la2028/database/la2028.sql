@@ -32,6 +32,7 @@ DROP TABLE IF EXISTS `pays`;
 CREATE TABLE `athlete` (
   `id` int(11) NOT NULL,
   `nom` varchar(50) NOT NULL,
+    `prenom` varchar(50) NOT NULL,
   `pays_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -39,19 +40,19 @@ CREATE TABLE `athlete` (
 -- Déchargement des données de la table `athlete`
 --
 
-INSERT INTO `athlete` (`id`, `nom`, `pays_id`) VALUES
-(1, 'Rinner', 93),
-(2, 'Biles', 88),
-(3, 'MCLAUGHLIN-LEVRONE', 88),
-(4, 'CURRY', 88),
-(5, 'MARKS', 88),
-(6, 'LYLES', 88),
-(7, 'SHIFFRIN', 88),
-(8, 'MARCHAND', 93),
-(9, 'WEMBANYAMA', 93),
-(10, 'KROU', 93),
-(11, 'BAYANDINA', 93),
-(12, 'DAUDET', 93);
+INSERT INTO `athlete` (`id`, `prenom`, `nom`, `pays_id`) VALUES
+(1, 'Teddy', 'Riner', 93),
+(2, 'Simone', 'Biles', 88),
+(3, 'Sydney', 'McLaughlin-Levrone', 88),
+(4, 'Stephen', 'Curry', 88),
+(5, 'Caroline', 'Marks', 88),
+(6, 'Noah', 'Lyles', 88),
+(7, 'Mikaela', 'Shiffrin', 88),
+(8, 'Léon', 'Marchand', 93),
+(9, 'Victor', 'Wembanyama', 93),
+(10, 'Youssef', 'Krou', 93),
+(11, 'Anastasia', 'Bayandina', 93),
+(12, 'Joris', 'Daudet', 93);
 
 
 

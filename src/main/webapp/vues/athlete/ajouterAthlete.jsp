@@ -23,6 +23,9 @@
             %>
         
         <form class="form-inline" action="ajouter" method="POST">
+                <label for="prenom">PRENOM : </label>
+                <input id="prenom" type="text" name="prenom"  size="30" maxlength="30">
+
                 <label for="nom">NOM : </label>
                 <input id="nom" type="text" name="nom"  size="30" maxlength="30">
                 </br>
@@ -38,7 +41,10 @@
                         }
                     %>
                 </select>
-                </br>            
+                </br>
+                <label for="date-naissance">Date de naissance :</label>
+                <input type="date" id="date-naissance" name="date-naissance">
+
                                
             <input type="submit" name="valider" id="valider" value="Valider"/>
             </form>

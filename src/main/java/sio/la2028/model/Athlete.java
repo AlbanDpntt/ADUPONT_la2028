@@ -11,13 +11,15 @@ package sio.la2028.model;
 public class Athlete {
     
     private int id;
+    private String prenom;
     private String nom ;
     private Pays pays ;
     public Athlete() {
     }
 
-    public Athlete(int id, String nom) {
+    public Athlete(int id, String nom, String prenom) {
         this.id = id;
+        this.prenom = prenom;
         this.nom = nom;
     }
 
@@ -27,6 +29,14 @@ public class Athlete {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
 
     public String getNom() {

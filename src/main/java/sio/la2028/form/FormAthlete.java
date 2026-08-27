@@ -42,6 +42,12 @@ public class FormAthlete {
         }
     }
 
+    private void validationPrenom( String prenom ) throws Exception {
+        if ( prenom != null && prenom.length() < 3 ) {
+            throw new Exception( "Le nom d'athlete doit contenir au moins 3 caractères." );
+        }
+    }
+
     private void setErreur( String champ, String message ) {
     erreurs.put(champ, message );
     }    
@@ -59,7 +65,8 @@ public class FormAthlete {
     public Athlete ajouterAthlete( HttpServletRequest request ) {
       
         Athlete ath  = new Athlete();
-         
+
+        String prenom = getDataForm(request, "prenom");
         String nom = getDataForm( request, "nom" );
         int idPays = Integer.parseInt((String)getDataForm( request, "idPays" ));
        
@@ -70,6 +77,7 @@ public class FormAthlete {
             setErreur( "nom", e.getMessage() );
         }
         ath.setNom(nom);
+        ath.setPrenom(prenom);
 
         if ( erreurs.isEmpty() ) {
             resultat = "Succès de l'ajout.";
