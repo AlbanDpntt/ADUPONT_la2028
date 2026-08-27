@@ -24,6 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 DROP TABLE IF EXISTS `athlete`;
 DROP TABLE IF EXISTS `pays`;
+DROP TABLE IF EXISTS `sport`;
 
 --
 -- Structure de la table `athlete`
@@ -34,28 +35,44 @@ CREATE TABLE `athlete` (
   `nom` varchar(50) NOT NULL,
     `prenom` varchar(50) NOT NULL,
   `pays_id` int(11) NOT NULL,
+    `sport_id` INT(11) NOT NULL,
   `date_de_naissance` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE `sport` (
+                         `id` int(11) NOT NULL,
+                         `nom` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `athlete`
 --
 
-INSERT INTO `athlete` (`id`, `prenom`, `nom`, `date_de_naissance`, `pays_id`) VALUES
-(1, 'Teddy', 'Riner', '1989-04-07', 93),
-(2, 'Simone', 'Biles', '1997-03-14', 88),
-(3, 'Sydney', 'McLaughlin-Levrone', '1999-08-07', 88),
-(4, 'Stephen', 'Curry', '1988-03-14', 88),
-(5, 'Caroline', 'Marks', '2002-02-14', 88),
-(6, 'Noah', 'Lyles', '1997-07-18', 88),
-(7, 'Mikaela', 'Shiffrin', '1995-03-13', 88),
-(8, 'Léon', 'Marchand', '2002-05-17', 93),
-(9, 'Victor', 'Wembanyama', '2004-01-04', 93),
-(10, 'Youssef', 'Krou', '1989-08-16', 93),
-(11, 'Anastasia', 'Bayandina', '1996-11-01', 93),
-(12, 'Joris', 'Daudet', '1991-02-12', 93);
+INSERT INTO `athlete` (`id`, `prenom`, `nom`, `date_de_naissance`, `sport_id`, `pays_id`) VALUES
+                                                                                              (1, 'Teddy', 'Riner', '1989-04-07', 1, 93),
+                                                                                              (2, 'Simone', 'Biles', '1997-03-14', 2, 88),
+                                                                                              (3, 'Sydney', 'McLaughlin-Levrone', '1999-08-07', 3, 88),
+                                                                                              (4, 'Stephen', 'Curry', '1988-03-14', 4, 88),
+                                                                                              (5, 'Caroline', 'Marks', '2002-02-14', 5, 88),
+                                                                                              (6, 'Noah', 'Lyles', '1997-07-18', 3, 88),
+                                                                                              (7, 'Mikaela', 'Shiffrin', '1995-03-13', 6, 88),
+                                                                                              (8, 'Léon', 'Marchand', '2002-05-17', 7, 93),
+                                                                                              (9, 'Victor', 'Wembanyama', '2004-01-04', 4, 93),
+                                                                                              (10, 'Youssef', 'Krou', '1989-08-16', 8, 93),
+                                                                                              (11, 'Anastasia', 'Bayandina', '1996-11-01', 9, 93),
+                                                                                              (12, 'Joris', 'Daudet', '1991-02-12', 10, 93);
 
-
+INSERT INTO `sport` (`id`, `nom`) VALUES
+ (1, 'Judo'),
+(2, 'Gymnastique artistique'),
+(3, 'Athlétisme'),
+(4, 'Basketball'),
+(5, 'Surf'),
+(6, 'Ski alpin'),
+(7, 'Natation'),
+(8, 'Beach-volley'),
+(9, 'Natation artistique'),
+(10, 'BMX Race');
 
 -- --------------------------------------------------------
 
@@ -68,6 +85,8 @@ CREATE TABLE `pays` (
     `code` varchar(3) NOT NULL,
   `nom` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
 
 --
 -- Déchargement des données de la table `pays`
@@ -89,13 +108,17 @@ IGNORE 0 ROWS                      -- N'ignorez aucune ligne si votre fichier n'
 --
 ALTER TABLE `athlete`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_ath_pays` (`pays_id`);
+  ADD KEY `fk_ath_pays` (`pays_id`),
+ ADD KEY `fk_ath_sport` (`sport_id`);
 
 --
 -- Index pour la table `pays`
 --
 ALTER TABLE `pays`
   ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `sport`
+    ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -113,6 +136,9 @@ ALTER TABLE `athlete`
 ALTER TABLE `pays`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
+ALTER TABLE `sport`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- Contraintes pour les tables déchargées
 --
@@ -121,8 +147,8 @@ ALTER TABLE `pays`
 -- Contraintes pour la table `athlete`
 --
 ALTER TABLE `athlete`
-  ADD CONSTRAINT `fk_ath_pays` FOREIGN KEY (`pays_id`) REFERENCES `pays` (`id`);
-COMMIT;
+    ADD CONSTRAINT `fk_ath_pays` FOREIGN KEY (`pays_id`) REFERENCES `pays` (`id`),
+  ADD CONSTRAINT `fk_ath_sport` FOREIGN KEY (`sport_id`) REFERENCES `sport` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

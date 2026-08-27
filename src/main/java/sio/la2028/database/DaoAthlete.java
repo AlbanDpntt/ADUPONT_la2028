@@ -11,6 +11,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import sio.la2028.model.Athlete;
 import sio.la2028.model.Pays;
+import sio.la2028.model.Sport;
+import java.sql.Statement;
 
 /**
  *
@@ -26,9 +28,13 @@ public class DaoAthlete {
         
         ArrayList<Athlete> lesAthletes = new ArrayList<Athlete>();
         try{
-            requeteSql = cnx.prepareStatement("select a.id as a_id, a.prenom as a_prenom, a.nom as a_nom, a.date_de_naissance as a_dob ,  p.id as p_id, p.nom as p_nom " +
-                         " from athlete a inner join pays p " +
-                         " on a.pays_id = p.id ");
+            requeteSql = cnx.prepareStatement(
+                    "SELECT a.id AS a_id, a.prenom AS a_prenom, a.nom AS a_nom, a.date_de_naissance AS a_dob, " +
+                            "p.id AS p_id, p.nom AS p_nom, s.id AS s_id, s.nom AS s_nom " +
+                            "FROM athlete a " +
+                            "INNER JOIN pays p ON a.pays_id = p.id " +
+                            "INNER JOIN sport s ON a.sport_id = s.id"
+            );
             //System.out.println("REQ="+ requeteSql);
             resultatRequete = requeteSql.executeQuery();
             
@@ -39,6 +45,10 @@ public class DaoAthlete {
                    a.setNom(resultatRequete.getString("a_nom"));
                    a.setPrenom(resultatRequete.getString("a_prenom"));
                     a.setDob(resultatRequete.getString("a_dob"));
+                Sport s = new Sport();
+                s.setId(resultatRequete.getInt("s_id"));
+                s.setNom(resultatRequete.getString("s_nom"));
+                a.setSport(s);
 
                    Pays p = new Pays();
                    p.setId(resultatRequete.getInt("p_id"));
@@ -61,10 +71,13 @@ public class DaoAthlete {
         
         Athlete a = new Athlete();
         try{
-            requeteSql = cnx.prepareStatement("select a.id as a_id, a.prenom as a_prenom, a.nom as a_nom, a.date_de_naissance as a_dob ,  p.id as p_id, p.nom as p_nom  " +
-                         " from athlete a inner join pays p " +
-                         " on a.pays_id = p.id " + 
-                         " where a.id = ? ");
+            requeteSql = cnx.prepareStatement("SELECT a.id AS a_id, a.prenom AS a_prenom, a.nom AS a_nom, a.date_de_naissance AS a_dob, " +
+                    "p.id AS p_id, p.nom AS p_nom, s.id AS s_id, s.nom AS s_nom " +
+                    "FROM athlete a " +
+                    "INNER JOIN pays p ON a.pays_id = p.id " +
+                    "INNER JOIN sport s ON a.sport_id = s.id " +
+                    "WHERE a.id = ?"
+        );
             //System.out.println("REQ="+ requeteSql);
             requeteSql.setInt(1, idAthlete);
             resultatRequete = requeteSql.executeQuery();
@@ -76,10 +89,16 @@ public class DaoAthlete {
                    a.setPrenom(resultatRequete.getString("a_prenom"));
                    a.setDob(resultatRequete.getString("a_dob"));
 
+
                    Pays p = new Pays();
                    p.setId(resultatRequete.getInt("p_id"));
                    p.setNom(resultatRequete.getString("p_nom"));
                     a.setPrenom(resultatRequete.getString("a_prenom"));
+
+                Sport s = new Sport();
+                s.setId(resultatRequete.getInt("s_id"));
+                s.setNom(resultatRequete.getString("s_nom"));
+                a.setSport(s);
                 
                     a.setPays(p);
                 
@@ -101,12 +120,15 @@ public class DaoAthlete {
             // id (clé primaire de la table athlete) est en auto_increment,donc on ne renseigne pas cette valeur
             // la paramètre RETURN_GENERATED_KEYS est ajouté à la requête afin de pouvoir récupérer l'id généré par la bdd (voir ci-dessous)
             // supprimer ce paramètre en cas de requête sans auto_increment.
-            requeteSql=connection.prepareStatement("INSERT INTO athlete (prenom, nom, date_de_naissance, pays_id)\n" +
-                    "VALUES (?,?,?,?)", requeteSql.RETURN_GENERATED_KEYS );
+            requeteSql = connection.prepareStatement(
+                    "INSERT INTO athlete (prenom, nom, date_de_naissance, sport_id, pays_id) VALUES (?, ?, ?, ?, ?)",
+                    Statement.RETURN_GENERATED_KEYS
+            );
             requeteSql.setString(1, ath.getPrenom());
             requeteSql.setString(2, ath.getNom());
             requeteSql.setString(3, ath.getDob());
-            requeteSql.setInt(4, ath.getPays().getId());
+            requeteSql.setInt(4, ath.getSport().getId());
+            requeteSql.setInt(5, ath.getPays().getId());
 
            /* Exécution de la requête */
             requeteSql.executeUpdate();

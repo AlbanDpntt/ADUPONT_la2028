@@ -9,6 +9,7 @@
 <%@page import="sio.la2028.model.Pays"%>
 <%@page import="sio.la2028.model.Athlete"%>
 <%@page import="sio.la2028.form.FormAthlete"%>
+<%@page import="sio.la2028.model.Sport"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -45,6 +46,18 @@
                 <label for="date_de_naissance">Date de naissance :</label>
                 <input type="date" id="date_de_naissance" name="date_de_naissance">
 
+                <label for="sport">Sport : </label>
+                <select id="sport" name="idSport">
+                    <%
+                        ArrayList<Sport> lesSports = (ArrayList<Sport>) request.getAttribute("lesSports");
+                        if (lesSports != null) {
+                            for (int i = 0; i < lesSports.size(); i++) {
+                                Sport p = lesSports.get(i);
+                                out.println("<option value='" + p.getId() + "'>" + p.getNom() + "</option>");
+                            }
+                        }
+                    %>
+                </select>
                                
             <input type="submit" name="valider" id="valider" value="Valider"/>
             </form>

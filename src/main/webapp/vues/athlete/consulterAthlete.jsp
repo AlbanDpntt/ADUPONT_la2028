@@ -27,6 +27,8 @@
         <h1><%  out.println(a.getNom());%></h1>
         <p><%  out.println(a.getPrenom());%></p>
         <p><%  out.println(a.getDob());%></p>
+        <p><%  out.println(a.getAge());%> ans</p>
+
             
                          
             <table>

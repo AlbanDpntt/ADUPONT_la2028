@@ -4,7 +4,10 @@
  */
 package sio.la2028.model;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+
 
 /**
  *
@@ -17,10 +20,11 @@ public class Athlete {
     private String nom ;
     private Pays pays ;
     private String date_de_naissance;
+    private Sport sport;
     public Athlete() {
     }
 
-    public Athlete(int id, String nom, String prenom, String date_de_naissance) {
+    public Athlete(int id, String nom, String prenom, String date_de_naissance, String sport) {
         this.id = id;
         this.prenom = prenom;
         this.nom = nom;
@@ -47,8 +51,22 @@ public class Athlete {
         return nom;
     }
 
+    public void setSport(Sport sport) {
+        this.sport = sport;
+    }
+
+    public Sport getSport() {
+        return sport;
+    }
+
     public void setDob(String date_de_naissance) {
         this.date_de_naissance = date_de_naissance;
+    }
+
+    public long getAge() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate date = LocalDate.parse(date_de_naissance, formatter);
+        return ChronoUnit.YEARS.between(date, LocalDate.now());
     }
 
     public String getDob() {
