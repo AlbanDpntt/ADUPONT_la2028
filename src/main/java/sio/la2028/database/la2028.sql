@@ -22,6 +22,8 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
+DROP TABLE IF EXISTS `athlete`;
+DROP TABLE IF EXISTS `pays`;
 
 --
 -- Structure de la table `athlete`
@@ -38,8 +40,20 @@ CREATE TABLE `athlete` (
 --
 
 INSERT INTO `athlete` (`id`, `nom`, `pays_id`) VALUES
-(1, 'Rinner', 1),
-(2, 'Biles', 2);
+(1, 'Rinner', 93),
+(2, 'Biles', 88),
+(3, 'MCLAUGHLIN-LEVRONE', 88),
+(4, 'CURRY', 88),
+(5, 'MARKS', 88),
+(6, 'LYLES', 88),
+(7, 'SHIFFRIN', 88),
+(8, 'MARCHAND', 93),
+(9, 'WEMBANYAMA', 93),
+(10, 'KROU', 93),
+(11, 'BAYANDINA', 93),
+(12, 'DAUDET', 93);
+
+
 
 -- --------------------------------------------------------
 
@@ -49,6 +63,7 @@ INSERT INTO `athlete` (`id`, `nom`, `pays_id`) VALUES
 
 CREATE TABLE `pays` (
   `id` int(11) NOT NULL,
+    `code` varchar(3) NOT NULL,
   `nom` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -56,9 +71,12 @@ CREATE TABLE `pays` (
 -- Déchargement des données de la table `pays`
 --
 
-INSERT INTO `pays` (`id`, `nom`) VALUES
-(1, 'France'),
-(2, 'Etats-Unis');
+LOAD DATA LOCAL INFILE 'C:/Users/alban/Documents/GitHub/la2028/src/main/java/sio/la2028/database/pays.csv'
+INTO TABLE pays
+FIELDS TERMINATED BY ';'          -- Spécifie que le séparateur est une tabulation
+LINES TERMINATED BY '\r\n'         -- Gère correctement les retours à la ligne Windows
+IGNORE 0 ROWS                      -- N'ignorez aucune ligne si votre fichier n'a pas d'entête (Id Code Nom)
+(id, code, nom);
 
 --
 -- Index pour les tables déchargées
@@ -107,3 +125,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
