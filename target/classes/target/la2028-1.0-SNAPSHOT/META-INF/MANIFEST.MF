@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: alban
+Build-Jdk: Microsoft OpenJDK 21.0.12
+
