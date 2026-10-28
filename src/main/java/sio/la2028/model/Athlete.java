@@ -4,6 +4,12 @@
  */
 package sio.la2028.model;
 
+<<<<<<< Updated upstream
+=======
+import java.util.ArrayList;
+import java.util.Date;
+
+>>>>>>> Stashed changes
 /**
  *
  * @author zakina
@@ -13,6 +19,11 @@ public class Athlete {
     private int id;
     private String nom ;
     private Pays pays ;
+<<<<<<< Updated upstream
+=======
+    private String date_de_naissance;
+    private ArrayList<Epreuve_Athlete> epreuveAthletes;
+>>>>>>> Stashed changes
     public Athlete() {
     }
 
@@ -43,6 +54,14 @@ public class Athlete {
 
     public void setPays(Pays pays) {
         this.pays = pays;
+    }
+
+    public ArrayList<Epreuve_Athlete> getEpreuveAthletes() {
+        return epreuveAthletes;
+    }
+
+    public void setEpreuveAthletes(ArrayList<Epreuve_Athlete> epreuveAthletes) {
+        this.epreuveAthletes = epreuveAthletes;
     }
     
     

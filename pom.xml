@@ -6,12 +6,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>la2028-1.0-SNAPSHOT</name>
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jakartaee>10.0.0</jakartaee>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>jakarta.platform</groupId>
@@ -25,7 +25,7 @@
             <version>2.7.5</version>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -41,6 +41,17 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>11.0.20</version>
+                <configuration>
+                    <webApp>
+                        <contextPath>/la2028</contextPath>
+                    </webApp>
+                </configuration>
             </plugin>
         </plugins>
     </build>

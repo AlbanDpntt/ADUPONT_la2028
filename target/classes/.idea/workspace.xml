@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="la2028:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62de3b0b-32d4-4a58-93ab-187dd253da6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sio/la2028/model/Epreuve_Athlete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vues/epreuve/consulterEpreuve.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sio/la2028/database/DaoAthlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sio/la2028/database/DaoAthlete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sio/la2028/database/DaoEpreuve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sio/la2028/database/DaoEpreuve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sio/la2028/database/la2028.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sio/la2028/database/la2028.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sio/la2028/model/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sio/la2028/model/Athlete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sio/la2028/model/Epreuve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sio/la2028/model/Epreuve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sio/la2028/servlet/ServletEpreuve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sio/la2028/servlet/ServletEpreuve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/JakartaRestConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/database/ConnexionBdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/database/DaoAthlete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/database/DaoEpreuve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/database/DaoPays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/database/InitConnexion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/form/FormAthlete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/model/Athlete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/model/Epreuve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/model/Pays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/model/Sport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/resources/JakartaEE10Resource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/servlet/ServletAthlete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/servlet/ServletEpreuve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sio/la2028/test/TestConnexionBdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/java/sio/la2028/database/la2028.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/webapp/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/webapp/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/src/main/webapp/vues/epreuve/listerEpreuves.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/java/sio/la2028/database/la2028.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/java/sio/la2028/database/la2028.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-2.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/listerAthletes.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-2.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/listerAthletes.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/sio/la2028/database/DaoEpreuve.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/sio/la2028/database/DaoEpreuve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/sio/la2028/model/Athlete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/sio/la2028/model/Athlete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/sio/la2028/model/Epreuve.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/sio/la2028/model/Epreuve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/sio/la2028/servlet/ServletEpreuve.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/sio/la2028/servlet/ServletEpreuve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/java/sio/la2028/database/la2028.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/epreuve/listerEpreuves.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/java/sio/la2028/database/la2028.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/java/sio/la2028/database/la2028.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/src/main/webapp/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-2.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/listerAthletes.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/lib/mariadb-java-client-2.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/ajouterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/consulterAthlete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/WEB-INF/classes/target/la2028-1.0-SNAPSHOT/vues/athlete/listerAthletes.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/vues/epreuve/listerEpreuves.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/la2028-1.0-SNAPSHOT/vues/epreuve/listerEpreuves.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/vues/epreuve/consulterEpreuve.jsp" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3IUMY2a4L0NjwUFSl2KtHTmeJwZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TestConnexionBdd.executor": "Run",
+    "Maven.la2028 [clean].executor": "Run",
+    "Maven.la2028 [compile].executor": "Run",
+    "Maven.la2028 [install].executor": "Run",
+    "Maven.la2028 [org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile].executor": "Run",
+    "Maven.la2028 [org.apache.maven.plugins:maven-install-plugin:3.1.4:install].executor": "Run",
+    "Maven.la2028 [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Tomcat Server.Tomcat 10.1.59.executor": "Run",
+    "Tomcat Server.Unnamed.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "dev2/us-epreuve",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alban/Documents/GitHub/la2028/pom.xml",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.59" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.59" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="la2028:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/la2028" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="c65322cf-1d7c-408b-834b-cc061cab189d" />
+        <option name="HTTP_PORT" value="8081" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60239" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="la2028:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62de3b0b-32d4-4a58-93ab-187dd253da6c" name="Changes" comment="" />
+      <created>1787814738218</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787814738218</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
